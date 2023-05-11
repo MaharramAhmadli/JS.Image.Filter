@@ -1,0 +1,82 @@
+@import 'partials/variables'; 
+@import 'partials/variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// .photo{
+//       ::selection background-color: red;
+// }
+
+body{
+    background-color: $color-back;
+}
+
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.flowers{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 80px;
+        li{
+            padding-left: 37px;
+            display: block;
+            margin-bottom: 30px;
+        }
+}
+
+.photo{
+    margin: 10px;
+    width: 23.53%;
+    img{
+        width: 300px;
+        height: 400px;
+    }
+    .text{
+        text-align: center;
+        margin: 20px 0;
+        p{
+            margin-top: 4px;
+        }
+    }
+}
+
+.photo{
+    position: relative;
+    .addition{
+        position: absolute;
+        width: 58px;
+        height: 29px;
+        background-color: $color-one;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 11px;
+        left: 8px;
+        p{
+            // position: absolute;
+            color: $primary-color-hover;
+            
+        }
+    }
+}
+
+img{
+    &:hover{
+        box-shadow: 1px -1px 20px 0px;
+        background-color: $color-hover;
+        color: $color-after;
+        transition: .9s;
+    }
+}
+
+
+

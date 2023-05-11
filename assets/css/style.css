@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #98E622;
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.flowers {
+  display: flex;
+  margin-left: 7%;
+  margin-top: 80px;
+}
+.flowers li {
+  padding-left: 37px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.photo {
+  margin: 10px;
+  width: 23.53%;
+}
+.photo img {
+  width: 300px;
+  height: 400px;
+}
+.photo .text {
+  text-align: center;
+  margin: 20px 0;
+}
+.photo .text p {
+  margin-top: 4px;
+}
+
+.photo {
+  position: relative;
+}
+.photo .addition {
+  position: absolute;
+  width: 58px;
+  height: 29px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 11px;
+  left: 8px;
+}
+.photo .addition p {
+  color: white;
+}
+
+img:hover {
+  box-shadow: 1px -1px 20px 0px;
+  background-color: #cad9df;
+  color: rgb(158, 59, 182);
+  transition: 0.9s;
+}
